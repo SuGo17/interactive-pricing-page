@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Pricing Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="top">
+        <img
+          src="./images/pattern-circles.svg"
+          alt="back-circle"
+          class="back-circle"
+        />
+        <h1 class="top-title">Simple, traffic-based pricing</h1>
+        <p class="top-sub-title">
+          Sign-up for 30 days free trial. No credit card required.
+        </p>
+      </div>
+      <div class="middle">
+        <div class="middle-top">
+          <div class="middle-slider-values">
+            <p class="page-views">100K PAGEVIEWS</p>
+            <div class="middle-price">
+              <p class="value">$16.00</p>
+              <p class="tenure">/ month</p>
+            </div>
+          </div>
+          <div class="price-slider">
+            <div class="progress-bar"></div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="25"
+              value="50"
+              name="price"
+              id="slider"
+            />
+            <div class="selector">
+              <div class="selector-btn">
+                <img src="./images/icon-slider.svg" alt="icon-slider" />
+              </div>
+            </div>
+          </div>
+          <div class="tenure-toggle">
+            <p class="monthly">Monthly Billing</p>
+            <input type="checkbox" name="Tenure" id="tenure" />
+            <p class="yearly">
+              Yearly Billing <span class="discount">-25%</span>
+            </p>
+          </div>
+        </div>
+        <div class="middle-bottom">
+          <div class="middle-text">
+            <div class="benefit">
+              <img
+                src="./images/icon-check.svg"
+                alt="Check"
+                class="benefit-img"
+              />
+              <p class="benefit-text">Unlimited websites</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/icon-check.svg"
+                alt="Check"
+                class="benefit-img"
+              />
+              <p class="benefit-text">100% data ownership</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/icon-check.svg"
+                alt="Check"
+                class="benefit-img"
+              />
+              <p class="benefit-text">Email reports</p>
+            </div>
+          </div>
+          <button class="middle-btn">Start my trial</button>
+        </div>
+      </div>
+      <div class="bottom"></div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
